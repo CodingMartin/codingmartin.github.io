@@ -1,2 +1,1 @@
-# waynesuper.github.io
-Wayne的个人Blog
+Martin的个人Blog
