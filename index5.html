@@ -87,11 +87,11 @@ body{
 </head>
 
 <body>
-	<a href="https://itunes.apple.com/cn/app/id978970901" id="openApp">打开App</a>
+	<a href="https://itunes.apple.com/cn/app/id1180013486" id="openApp">打开App</a>
 	<script type="text/javascript">
 		document.getElementById('openApp').onclick=function(e) {
 			var ifr = document.createElement('iframe');
-			ifr.src='com.zttd.webApp://';
+			ifr.src='yuetanapp://?aaa=1;bbb=2';
 			ifr.style.display='none';
 			document.body.appendChild(ifr);
 			window.setTimeout(function(){
