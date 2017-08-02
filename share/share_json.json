@@ -1,0 +1,24 @@
+{
+code: 0,
+msg: "xxx",
+data: {
+size: {
+l: 0.3,
+t: 0.3,
+r: 0.8,
+b: 0.6
+},
+md5: "xxxxx:",
+textInfo: [
+{
+textSize: 50,
+textColor: "#FFFFFF"
+},
+{
+textSize: 50,
+textColor: "#FFFFFF"
+}
+],
+image: "http://www.baidu.com"
+}
+}
