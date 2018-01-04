@@ -1,0 +1,544 @@
+{
+  "mySeat": 2,
+  "myRole": 2,
+  "beforeGame": {
+    "speechCuteIns": [
+      {
+        "speechStart": {
+          "seat": 1
+        },
+        "say": {
+          "file": "word_1_1",
+          "duration": 2
+        },
+        "delay": 1
+      },
+      {
+        "speechStart": {
+          "seat": 4
+        },
+        "say": {
+          "file": "word_4_1",
+          "duration": 2
+        },
+        "delay": 1
+      },
+      {
+        "speechStart": {
+          "seat": 3
+        },
+        "say": {
+          "file": "word_3_1",
+          "duration": 1
+        },
+        "delay": 1
+      },
+      {
+        "speechStart": {
+          "seat": 5
+        },
+        "say": {
+          "file": "word_5_1",
+          "duration": 3
+        },
+        "delay": 1
+      },
+      {
+        "speechStart": {
+          "seat": 1
+        },
+        "say": {
+          "file": "word_1_2",
+          "duration": 6
+        },
+        "delay": 1
+      }
+    ]
+  },
+  "assignRole": {
+    "duration": 5,
+    "roles": {
+      "2": "2",
+      "4": "2"
+    }
+  },
+  "inGame": [
+    {
+      "day": 1,
+      "night": true,
+      "nightEntry": {
+        "duration": 30,
+        "nightTime": {
+          "day": 1
+        },
+        "god": {
+          "msg": "天黑了，请睁眼玩家开始行动"
+        },
+        "alert": {
+          "msg": "天黑了，开始行动",
+          "duration": 30
+        },
+        "wolfKill": {
+          "seat": 4,
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_2",
+                "duration": 3
+              },
+              "delay": 5
+            }
+          ],
+          "killPrepare": {
+            "seat": 2,
+            "duration": 25,
+            "wait": 3,
+            "targets": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ]
+          },
+          "delayConfirm": 7,
+          "killConfirm": {
+            "src": 4,
+            "target": 3
+          },
+          "killMsg": {
+            "msg": "你们今晚击杀的玩家[3]"
+          }
+        }
+      }
+    },
+    {
+      "day": 1,
+      "night": false,
+      "god": {
+        "msg": "天亮了"
+      },
+      "alert": {
+        "msg": "天亮了",
+        "duration": 3
+      },
+      "killResult": {
+        "seats": [
+          3
+        ],
+        "roles": [
+          4
+        ],
+        "duration": 3
+      },
+      "speechRounds": [
+        {
+          "alert": {
+            "msg": "[3]发表遗言",
+            "duration": 30
+          },
+          "speech": {
+            "seat": 3,
+            "isLastWords": true,
+            "duration": 30
+          },
+          "speechOrder": {
+            "msg": "从 [随机] [5] 开始发言"
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 3
+              },
+              "say": {
+                "file": "word_3_2",
+                "duration": 2,
+                "delay": 1
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_3",
+                "duration": 3
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 3
+              },
+              "say": {
+                "file": "word_3_3",
+                "duration": 7
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_4",
+                "duration": 6
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 6
+              },
+              "say": {
+                "file": "word_6_1",
+                "duration": 2
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 3
+              },
+              "say": {
+                "file": "word_3_4",
+                "duration": 2
+              },
+              "delay": 1
+            }
+          ]
+        },
+        {
+          "alert": {
+            "msg": "[5] 发言中",
+            "duration": 45
+          },
+          "speech": {
+            "seat": 5,
+            "duration": 45,
+            "speechers": [
+              4,
+              5,
+              6,
+              1,
+              2
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 5
+              },
+              "say": {
+                "file": "word_5_2",
+                "duration": 6
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 6
+              },
+              "say": {
+                "file": "word_6_2",
+                "duration": 4
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_5",
+                "duration": 4
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 6
+              },
+              "say": {
+                "file": "word_6_3",
+                "duration": 10
+              },
+              "delay": 1
+            },
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_6",
+                "duration": 3
+              },
+              "delay": 1
+            }
+          ]
+        },
+        {
+          "alert": {
+            "msg": "[6] 发言中",
+            "duration": 45
+          },
+          "speech": {
+            "seat": 6,
+            "duration": 45,
+            "speechers": [
+              4,
+              6,
+              1,
+              2
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 6
+              },
+              "say": {
+                "file": "word_6_4",
+                "duration": 13
+              },
+              "delay": 1
+            }
+          ]
+        },
+        {
+          "alert": {
+            "msg": "[1] 发言中",
+            "duration": 45
+          },
+          "speech": {
+            "seat": 1,
+            "duration": 45,
+            "speechers": [
+              4,
+              1,
+              2
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 1
+              },
+              "say": {
+                "file": "word_1_3",
+                "duration": 16
+              },
+              "delay": 1
+            }
+          ]
+        },
+        {
+          "alert": {
+            "msg": "[2] 发言中",
+            "duration": 45
+          },
+          "speech": {
+            "seat": 2,
+            "duration": 45,
+            "speechers": [
+              4,
+              2
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 2
+              },
+              "say": {
+                "duration": 45
+              }
+            }
+          ]
+        },
+        {
+          "alert": {
+            "msg": "[4] 发言中",
+            "duration": 45
+          },
+          "speech": {
+            "seat": 4,
+            "duration": 45,
+            "speechers": [
+              4
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_7",
+                "duration": 19
+              },
+              "delay": 1
+            }
+          ]
+        }
+      ],
+      "elimination": {
+        "god": {
+          "msg": "被公投出局的是[5]，请发表遗言"
+        },
+        "killResult": {
+          "seats": [
+            5
+          ],
+          "roles": [
+            3
+          ],
+          "duration": 3
+        },
+        "eliminateVote": {
+          "duration": 5,
+          "targets": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        "eliminateVoteResult": {
+          "duration": 3,
+          "votersGiveUp": [],
+          "gossipSeat": 0,
+          "seatEliminated": 5,
+          "voteDetails": [
+            {
+              "src": [
+                1,
+                4,
+                6
+              ],
+              "dest": 5
+            },
+            {
+              "src": [
+                5
+              ],
+              "dest": 4
+            }
+          ]
+        },
+        "lastSpeech": {
+          "god": {
+            "msg": "[5]发表遗言"
+          },
+          "alert": {
+            "msg": "[5]发表遗言",
+            "duration": 30
+          },
+          "speech": {
+            "seat": 5,
+            "isLastWords": true,
+            "duration": 30
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 5
+              },
+              "say": {
+                "file": "word_5_3",
+                "duration": 7
+              },
+              "delay": 1
+            }
+          ]
+        }
+      }
+    },
+    {
+      "day": 2,
+      "night": true,
+      "nightEntry": {
+        "duration": 30,
+        "nightTime": {
+          "day": 1
+        },
+        "god": {
+          "msg": "天黑了，请睁眼玩家开始行动"
+        },
+        "alert": {
+          "msg": "天黑了，开始行动",
+          "duration": 3
+        },
+        "wolfKill": {
+          "seat": 4,
+          "killPrepare": {
+            "seat": 2,
+            "duration": 25,
+            "wait": 3,
+            "targets": [
+              1,
+              2,
+              4,
+              6
+            ]
+          },
+          "speechCuteIns": [
+            {
+              "speechCuteIn": {
+                "seat": 4
+              },
+              "say": {
+                "file": "word_4_8",
+                "duration": 3
+              },
+              "delay": 5
+            }
+          ],
+          "delayConfirm": 6,
+          "killConfirm": {
+            "src": 4,
+            "target": 6
+          },
+          "killMsg": {
+            "msg": "你们今晚击杀的玩家[6]"
+          }
+        }
+      }
+    },
+    {
+      "day": 2,
+      "night": false,
+      "god": {
+        "msg": "天亮了"
+      },
+      "alert": {
+        "msg": "天亮了",
+        "duration": 3
+      },
+      "killResult": {
+        "seats": [
+          6
+        ],
+        "roles": [
+          1
+        ],
+        "duration": 3
+      }
+    }
+  ],
+  "gameResult": {
+    "god": {
+      "msg": "恭喜[狼人]阵营获得最后胜利"
+    },
+    "gameResult": {
+      "isWerewolfWin": true
+    }
+  }
+}
